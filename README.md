@@ -30,3 +30,6 @@ Working prototype, Mnist example currently under development
 
 ### Model test results after training
 ![image](https://github.com/user-attachments/assets/73b80c01-3df0-4e93-8d83-9fe2de4a68f4)
+
+### Internaly generated computation graph used for the automatic differentiation
+![graphviz (1)](https://github.com/user-attachments/assets/aada2fbb-685a-49af-a16c-3712e91b9642)
