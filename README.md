@@ -20,3 +20,16 @@ Working prototype, Mnist example currently under development
 
 ## Work in progress
 The Mnist projects are currently under development.
+
+## Preview
+### Usage example
+![image](https://github.com/user-attachments/assets/a7e7310b-6f58-4bec-bce2-21ba2c579721)
+
+### Training output
+![image](https://github.com/user-attachments/assets/bc20e1c3-f38a-4cbb-a519-6c0a7b96d931)
+
+### Automatic differentiation
+![image](https://github.com/user-attachments/assets/0841bc22-7153-4c66-94f8-86385abe234c)
+
+### Model test results after training
+![image](https://github.com/user-attachments/assets/73b80c01-3df0-4e93-8d83-9fe2de4a68f4)
