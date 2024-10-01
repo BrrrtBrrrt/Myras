@@ -18,9 +18,6 @@ The Demo project shows a example how to use this library.
 ## Status
 Working prototype, Mnist example currently under development
 
-## Work in progress
-The Mnist projects are currently under development.
-
 ## Preview
 ### Usage example
 ![image](https://github.com/user-attachments/assets/a7e7310b-6f58-4bec-bce2-21ba2c579721)
