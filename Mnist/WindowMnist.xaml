@@ -1,0 +1,50 @@
+﻿<base:WindowView x:Class="Mnist.WindowMnist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:base="clr-namespace:CommonsWpf.Mvvm;assembly=CommonsWpf"
+        xmlns:v="clr-namespace:MnistLib.ViewModels;assembly=MnistLib"
+        xmlns:grid="clr-namespace:NameBasedGrid;assembly=NameBasedGrid"
+        xmlns:local="clr-namespace:Mnist"
+        mc:Ignorable="d"
+        Title="Mnist" Height="431" Width="616">
+    <base:WindowView.DataContext>
+        <v:Mnist/>
+    </base:WindowView.DataContext>
+    <grid:NameBasedGrid>
+        <grid:NameBasedGrid.RowDefinitions>
+            <grid:ColumnOrRow Name="Menu" Size="Auto"/>
+            <grid:ColumnOrRow Name="Content" Size="*"/>
+            <grid:ColumnOrRow Name="Footer" Size="Auto"/>
+        </grid:NameBasedGrid.RowDefinitions>
+
+        <Menu grid:NameBasedGrid.Row="Menu">
+            <MenuItem Header="File">
+                <MenuItem x:Name="MenuItemExit" Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Train"/>
+            <MenuItem Header="Reset"/>
+            <MenuItem x:Name="MenuItemClear" Header="Clear"/>
+        </Menu>
+
+        <grid:NameBasedGrid grid:NameBasedGrid.Row="Content">
+            <grid:NameBasedGrid.ColumnDefinitions>
+                <grid:ColumnOrRow Name="Left" Size="*"/>
+                <grid:ColumnOrRow Name="Right" Size="*"/>
+            </grid:NameBasedGrid.ColumnDefinitions>
+
+            <Border grid:NameBasedGrid.Column="Left" BorderThickness="3,3,3,3" BorderBrush="Black">
+                <Canvas x:Name="CanvasNumber" Cursor="Cross"/>
+            </Border>
+            <Label x:Name="LabelNumber" grid:NameBasedGrid.Column="Right" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold"/>
+
+        </grid:NameBasedGrid>
+
+        <StatusBar grid:NameBasedGrid.Row="Footer">
+            <StatusBarItem>
+                <TextBlock Text="xxx"/>
+            </StatusBarItem>
+        </StatusBar>
+    </grid:NameBasedGrid>
+</base:WindowView>
